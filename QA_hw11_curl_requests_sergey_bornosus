@@ -12,3 +12,12 @@ curl -v -X DELETE -d "{\"id\": \"265\"}" -H "Content-Type: application/json" htt
 
 create Administrator
 curl -v http://151.80.70.42:3000/api/users/refreshAdmins
+
+
+echo "# QA_hw11_curl_requests" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/703comua/QA_hw11_curl_requests.git
+git push -u origin main
