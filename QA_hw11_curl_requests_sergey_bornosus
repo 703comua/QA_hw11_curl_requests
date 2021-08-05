@@ -1,0 +1,14 @@
+1) create new user
+curl -v -d "{\"name\": \"Sergey705\", \"phone\": \"705-705-705\", \"role\": \"Student\"}" -H "Content-Type: application/json" http://151.80.70.42:3000/api/users
+
+2) read all users
+curl -v -H "Content-Type: application/json" http://151.80.70.42:3000/api/users
+
+3) update user by id
+curl -v -X PUT -d "{\"id\": 261, \"name\": \"Sergey705\", \"phone\": \"705-705-703\", \"role\": \"Student\", \"strikes\": 2, \"location\": \"\"}" -H "Content-Type: application/json" http://151.80.70.42:3000/api/users
+
+4) delete user by id
+curl -v -X DELETE -d "{\"id\": \"265\"}" -H "Content-Type: application/json" http://151.80.70.42:3000/api/users
+
+create Administrator
+curl -v http://151.80.70.42:3000/api/users/refreshAdmins
